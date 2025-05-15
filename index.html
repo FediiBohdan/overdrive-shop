@@ -3,12 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Shops</title>
+  <title>My Online Shops</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f9d423, #ff4e50);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.description {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .link-button {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .link-button:hover {
+      background: #fff;
+      color: #ff4e50;
+      border-color: #fff;
+    }
+  </style>
 </head>
-<body style="font-family:sans-serif; text-align:center; padding:50px;">
-  <h1>Visit My Shops</h1>
-  <p><a href="https://olx.ua/your-shop-link" target="_blank">OLX Shop</a></p>
-  <p><a href="https://rozetka.com.ua/your-shop-link" target="_blank">Rozetka Shop</a></p>
-  <p><a href="https://prom.ua/your-shop-link" target="_blank">Prom Shop</a></p>
+<body>
+  <h1>Welcome to My Shops</h1>
+  <p class="description">
+    I sell toys, gadgets, and more! Choose your favorite platform below and explore the latest deals.
+  </p>
+  <a class="link-button" href="https://olx.ua/your-shop-link" target="_blank">Shop on OLX</a><br/>
+  <a class="link-button" href="https://rozetka.com.ua/your-shop-link" target="_blank">Shop on Rozetka</a><br/>
+  <a class="link-button" href="https://prom.ua/your-shop-link" target="_blank">Shop on Prom</a>
 </body>
 </html>
