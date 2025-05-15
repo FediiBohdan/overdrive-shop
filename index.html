@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Мої Магазини</title>
+  <title>Overdrive Shop</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #f9d423, #ff4e50);
+      background: linear-gradient(to right, #136a8a, #267871);
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -16,54 +17,71 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      padding: 2rem;
     }
 
-    img.logo {
-      max-width: 120px;
-      margin-bottom: 1.5rem;
+  	img.logo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
 
     p.description {
       font-size: 1.2rem;
-      max-width: 500px;
-      margin-bottom: 2rem;
+      max-width: 650px;
+      margin-bottom: 1rem;
     }
 
     .link-button {
-      display: inline-block;
       width: 200px;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      font-size: 1.1rem;
-      color: #fff;
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid #fff;
-      border-radius: 10px;
+      display: inline-block;
+      background: #ffffff;
+      color: #136a8a;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
+      border: 2px solid transparent;
     }
 
     .link-button:hover {
-      background: #fff;
-      color: #ff4e50;
-      border-color: #fff;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .button-row {
+      display: flex;
+      column-gap: 2rem;
     }
   </style>
 </head>
 <body>
   <img src="shop-logo.png" alt="Логотип магазину" class="logo" />
-  <h1>Ласкаво просимо!</h1>
+  <h1>Ласкаво просимо в Overdrive!</h1>
   <p class="description">
     Тут ви знайдете найкращі іграшки, гаджети та подарунки. Оберіть зручний для вас маркетплейс і переходьте до покупок!
   </p>
-  <a class="link-button" href="https://olx.ua/your-shop-link" target="_blank">OLX</a><br/>
-  <a class="link-button" href="https://rozetka.com.ua/your-shop-link" target="_blank">Rozetka</a><br/>
-  <a class="link-button" href="https://prom.ua/your-shop-link" target="_blank">Prom</a>
+  <div class="button-row">
+    <a class="link-button" href="https://rozetka.com.ua/your-shop-link" target="_blank">Rozetka</a>
+    <a class="link-button" href="https://prom.ua/your-shop-link" target="_blank">Prom</a>
+  </div>
+
+  <div class="button-row">
+    <a class="link-button" href="https://olx.ua/your-shop-link" target="_blank">OLX</a>
+    <a class="link-button" href="https://t.me/gizelbard" target="_blank">Telegram</a>
+  </div>
 </body>
 </html>
